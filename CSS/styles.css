@@ -76,7 +76,7 @@
     text-decoration: underline;
   }
 
-  /* About me */
+                /* About me */
 
   .seccion-oscura {
     color: white;
@@ -101,21 +101,24 @@
     font-family: 'Lobster', sans-serif;
   }
 
-  /* Experiencia */
+                 /* Experiencia */
 
   .experiencia {
     
-    padding: 40px 40px 60px 40px;
+    padding: 40px 20px 60px 20px;
     
   }
-  /*
+  
   .experiencia .columna{
     padding: 20px;
     border: 2px solid #8080804d;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-  }*/
+    transition: all 0.3s ease-in;
+    
+  }
+  .experiencia .columna:hover {
+    background-color: #0a0a23;
+    color: white;
+  }
   
   .seccion-clara {
     color: black;
@@ -124,24 +127,62 @@
   }
   .experiencia-titulo {
     font-size: 2rem;
-    font-weight: bold;
+    font-family: 'Nova Square', sans-serif;
+    font-weight:800;
     margin: 10px 0;
     
   }
+  .experiencia-parrafo {
+    font-family: 'Nova Square', sans-serif;
+  }
+  
   .experiencia i {
     font-size: 1rem;
     color: #7ade30;
     background-color: #0a0a23;
     padding: 7px 19px;
     border-radius: 50%;
+    
   }
   .badges-contenedor {
     font-size: 20px;
     font-weight: bold;
     margin: 10px 0;
+    font-family: 'Nova Square', sans-serif;
+    letter-spacing: 1px;
+
   }
   .badges {
     margin: 25px;
+  }
+
+                /* Proyectos */
+  .proyectos {
+    padding: 20px;
+  }
+
+  .texto-negro {
+    color: black;
+    font-family: 'Nova Square', sans-serif;
+    font-weight: bold;
+  }
+
+  .seccion-descripcion {
+    font-size: 1.2rem;
+    color: #584e4e;
+  }
+
+
+
+
+
+
+
+
+
+  footer {
+    text-align: end;
+    padding: 2em
   }
   
 

@@ -103,27 +103,26 @@
 
   /* Experiencia */
 
-  .experiencia {
-    
-    padding: 40px 40px 60px 40px;
-    
-  }
-  /*
-  .experiencia .columna{
+  /*.experiencia {
+    background-color: #7ade30;
     padding: 20px;
     border: 2px solid #8080804d;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
+    padding: 40px 40px 60px 40px;
+    
   }*/
   
+  
+  
   .seccion-clara {
-    color: black;
-    background-color: white;
+    color: rgb(9, 9, 10);
+    background-color: rgb(241, 239, 239);
     
   }
   .experiencia-titulo {
-    font-size: 2rem;
+    font-size: rem;
     font-weight: bold;
     margin: 10px 0;
     
@@ -143,6 +142,8 @@
   .badges {
     margin: 25px;
   }
+
+  
   
 
   
