@@ -157,8 +157,8 @@
   }
 
                 /* Proyectos */
-  .proyectos {
-    padding: 20px;
+  .proyectos-recientes {
+    padding: 40px;
   }
 
   .texto-negro {
@@ -171,6 +171,90 @@
     font-size: 1.2rem;
     color: #584e4e;
   }
+  .proyectos-recientes img {
+    height: 100%;
+    width: 100%;
+    border-radius: 25px;
+    padding: 10px;
+    
+    display: block;
+    transition: all 0.2s ease;
+  }
+  
+  .proyecto {
+    position: relative;
+    
+  }
+
+  .proyectos-contenedor {
+    padding: 60px;
+    margin: 40px;
+  }
+
+  .overlay {
+    transition: all 0.2s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    border: 5px solid rgb(23, 21, 21);
+    padding: 17px 115px;
+    border-radius: 20px;
+  }
+  .overlay p {
+    font-size: 2.5em;
+    font-weight: bold;
+    margin-bottom: 0;
+
+  }
+  .proyecto:hover img {
+    opacity: 0.3;
+  }
+
+  .proyecto:hover .overlay {
+    opacity: 1;
+  }
+  
+  
+
+  .overlay .iconos-contenedor {
+    display: flex;
+    justify-content: space-evenly;
+    
+  }
+  .overlay i {
+    color: black;
+    font-size: 3em;
+  }
+  #bilaptop6 {
+    color: #0a0b0a;
+  }
+  #bilaptop5 {
+    color: #bb14e0;
+  }
+  #bilaptop4 {
+    color: #f59e07;
+  }
+  #bilaptop3 {
+    color: #38721b;
+  }
+  #bilaptop2 {
+    color: #eb1241;
+  }
+  #bilaptop1 {
+    color: #04f9f5;
+  }
+  /* STYLEs BUTTONS */
+  .btn-info {
+    font-size: 1.1rem;
+    margin: 20px;
+    
+  }
+
+
+  
 
 
 
@@ -179,10 +263,17 @@
 
 
 
+
+   /* FOOTER */
 
   footer {
+    font-family: 'Lobster', cursive, sans-serif;
     text-align: end;
-    padding: 2em
+    padding: 2em;
+    letter-spacing: 1px;
+  }
+  footer span {
+    margin-left: 0.6em;
   }
   
 
@@ -193,6 +284,21 @@
   
   
   /* Media Queris */
+
+  
+  @media screen and (max-width: 400px) {
+    .overlay p {
+      font-size: 1em;
+    }
+    .overlay i {
+      font-size: 1em;
+    }
+    .overlay {
+      border: none;
+    }
+  }
+
+
   @media screen and (max-width: 767px) {
     .navbar-brand {
       display: none;
