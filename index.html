@@ -21,7 +21,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Carattere&family=Playfair+Display&family=Poppins&family=Rubik+Dirt&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Rubik+Maps&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Nova+Square&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nova+Square&family=Share+Tech+Mono&display=swap" rel="stylesheet">
 
   </head>
   <body>
@@ -42,13 +42,13 @@
               <a class="nav-link active" aria-current="page" href="#">About me</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Projects</a>
+              <a class="nav-link" href="#proyectos">Projects</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">My courses</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Contact</a>
+              <a class="nav-link" href="#contacto">Contact</a>
             </li>
           </ul>
          
@@ -124,7 +124,7 @@
       
     <!-- Proyectos -->
 
-      <section class="proyectos-recientes section-clara d-flex flex-column">
+      <section class="proyectos-recientes section-clara d-flex flex-column" id="proyectos">
         <h2 class="section-titulo texto-negro">Mis Proyectos</h2>
         <h3 class="seccion-descripcion">Mis proyectos mas recientes</h3>
             <!--Galeria de proyecton-->
@@ -284,31 +284,49 @@
 
       </section>
       <!-- TESTIMONIOS-->
-      <section class="testimonios section-clara">
-        <h2>Testimonios</h2>
+      <section id="testimonios" class="testimonios section-clara">
+        <h2>TESTIMONIOS</h2>
         <h3 class="seccion-descripcion">Estos son algunos testimonios de mis clientes</h3>
         <!--CARRUSEL-->
-        <div id="testimonios-carousel" class="carousel carousel-dark slide">
+        <div id="testimonios-carousel" class="carousel slide">
           <div class="carousel-inner">
             <div class="carousel-item active">
               <div class="container">
-                <img class="testimonio-imagen rounded-circle" src="./Ressourses/images/cliente1.svg" alt="foto del primer cliente">
+                <img class="testimonio-imagen" src="./Ressourses/images/cliente1.svg" alt="foto del primer cliente">
                 <p class="testimonio-texto">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus non malesuada mauris. Cras aliquet tellus aliquam posuere rutrum. Sed enim ex, porta vel efficitur a, pulvinar sed est.</p>
                 <div class="testimonio-info">
                   <p class="cliente">Roger</p>
                   <p class="cargo">Gerente de proyectos de desarrollo</p>
                 </div>
-              </div>
+              </div>  
+            </div>
 
-              <img src="./Ressourses/images/cliente1.svg" class="d-block w-100" alt="image of first client">
-            </div>
+
             <div class="carousel-item">
-              <img src="./Ressourses/images/cliente2 (1).svg" class="d-block w-100" alt="image of second client">
+              <div class="container">
+              <img class="testimonio-imagen" src="./Ressourses/images/cliente2 (1).svg" class="d-block w-100" alt="image of second client">
+              <p class="testimonio-texto">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus non malesuada mauris. Cras aliquet tellus aliquam posuere rutrum. Sed enim ex, porta vel efficitur a, pulvinar sed est.</p>
+              <div class="testimonio-info">
+                <p class="cliente">Nora</p>
+                <p class="cargo">Gerente de DiseñaMiPaginaWeb</p>
+              </div>
             </div>
+            </div>
+
+
             <div class="carousel-item">
-              <img src="./Ressourses/images/cliente3.svg" class="d-block w-100" alt="image of third client">
+              <div class="container">
+              <img class="testimonio-imagen" src="./Ressourses/images/cliente3.svg" class="d-block w-100" alt="image of third client">
+              <p class="testimonio-texto">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus non malesuada mauris. Cras aliquet tellus aliquam posuere rutrum. Sed enim ex, porta vel efficitur a, pulvinar sed est.</p>
+                <div class="testimonio-info">
+                  <p class="cliente">Robert Goodman</p>
+                  <p class="cargo">Director de AprendeAProgramar</p>
+                </div>
             </div>
+            </div>
+
           </div>
+
           <button class="carousel-control-prev" type="button" data-bs-target="#testimonios-carousel" data-bs-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Previous</span>
@@ -318,7 +336,29 @@
             <span class="visually-hidden">Next</span>
           </button>
         </div>
+      </section>
 
+                    <!--SECCION CONTACTO-->
+      <section class="contacto seccion-oscura" id="contacto">
+        <div class="container">
+          <div class="container text-center rectangulo d-flex justify-content-evenly">
+            <div class="row">
+              <div class="col-12 col-md-4 seccion-titulo">
+                Contact Me Here!
+              </div>
+              <div class="col-12 col-md-4 descripcion">
+                Contactame para iniciar tu proyecto y hare que tu vision se haga realidad.
+              </div>
+              <div class="col-12 col-md-4">
+                <a href="mailto:moonyruna3@gmail.com"/>
+                <button type="button">
+                  Contacto:
+                  <i class="bi bi-envelope-at-fill"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
 
 
